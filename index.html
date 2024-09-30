@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+  
+        body {
+          font-family: sans-serif;
+          background-color: #f4eaec;
+          color: #273949;
+          display: flex;
+          flex-wrap: wrap;
+          width: 100vw;
+          min-height: 100vh;
+          align-content: flex-start;
+          line-height: 1.5;
+          overflow-x: hidden;
+        }
+  
+        h2,
+        h3 {
+          color: #111920;
+        }
+        a {
+          transition: all 0.2s;
+          color: #273949;
+          text-decoration: none;
+        }
+        a:hover {
+          color: #e1576e;
+        }
+        footer,
+        header {
+          background-color: #273949;
+          color: #f4eaec;
+          padding: 1rem 2rem;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-basis: 100%;
+          align-self: flex-start;
+        }
+        footer {
+          align-self: flex-end;
+        }
+        footer p {
+          width: 100%;
+          text-align: center;
+          opacity: 0.5;
+        }
+        ul {
+          list-style: none;
+        }
+        header nav ul {
+          display: flex;
+          align-items: center;
+        }
+        header nav li {
+          margin-left: 1rem;
+        }
+        header nav li a {
+          color: #f4eaec;
+        }
+  
+        main,
+        aside {
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+          min-height: calc(100vh - 200px);
+        }
+        main {
+          margin: 2rem 1rem 2rem 2rem;
+          flex-basis: 66%;
+        }
+        aside {
+          margin: 2rem 2rem 2rem 1rem;
+          flex-basis: 26%;
+          margin-left: auto;
+        }
+        aside h3 {
+          margin-bottom: 1rem;
+        }
+        aside nav {
+          border: 1px solid #bebebe;
+          border-radius: 4px;
+          margin-bottom: 2rem;
+          /* padding: 0.5rem 0; */
+        }
+        aside nav li {
+          border-bottom: 1px solid #bebebe;
+          display: flex;
+          transition: all 0.2s;
+        }
+        aside nav li a {
+          padding: 0.5rem 1rem;
+          width: 100%;
+        }
+        aside nav li:last-child {
+          border-bottom: none;
+        }
+        aside nav li a {
+          width: 100%;
+        }
+        aside nav li:hover {
+          background-color: #bebebe;
+        }
+        aside nav li:hover a {
+          color: #fff;
+        }
+        figcaption {
+          font-size: 14px;
+        }
+        #welcome h2 {
+          margin-bottom: 1rem;
+        }
+        #welcome img {
+          width: 100%;
+          height: 20rem;
+          object-fit: cover;
+          object-position: 0 -10vh;
+          border-radius: 3px;
+        }
+        #blog {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+        }
+        #blog h2 {
+          margin: 2rem 0 1rem;
+          flex-basis: 100%;
+        }
+        article {
+          flex-basis: 32%;
+          padding: 1rem;
+          border: 1px solid #bebebe;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        article:hover {
+          box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        article h3 {
+          margin-bottom: 1rem;
+        }
+        article a {
+          font-weight: bold;
+          margin-top: 0.5rem;
+        }
+        details {
+          margin-top: 2rem;
+        }
+        details summary {
+          font-weight: bold;
+        }
+        details p {
+          margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li> 
+                <li><a href="#">About</a></li> 
+                <li><a href="#">Contact</a></li> 
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="welcome">
+            <h2>
+                Welcome to my website
+            </h2>
+            <figure>
+                <img src="/images/sunset.jpg" alt="sunset">
+                <figcaption>fig1-sunset</figcaption>
+            </figure>
+        </section>
+        <section id="blog">
+            <h2>
+                Our Blog
+            </h2>
+            <article>
+                <h3>
+                    Article one 
+                </h3>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ex doloribus eveniet, nemo beatae dignissimos.</P>
+                <a href="#">See More</a>
+            </article>
+            <article>
+                <h3>
+                    Article one 
+                </h3>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ex doloribus eveniet, nemo beatae dignissimos.</P>
+                <a href="#">See More</a>
+            </article>
+            <article>
+                <h3>
+                    Article one 
+                </h3>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ex doloribus eveniet, nemo beatae dignissimos.</P>
+                <a href="#">See More</a>
+            </article>
+        </section>
+    </main>
+    <aside>
+        <nav>
+            <h3>
+                Navigation
+            </h3>
+            <ul>
+                <li><a href="#">Home</a></li> 
+                <li><a href="#">About</a></li> 
+                <li><a href="#">Contact</a></li> 
+            </ul>
+        </nav>
+        <nav>
+            <h3>
+                Contact
+            </h3>
+            <ul>
+                <li><i></i><mark>010977068588</mark></li> 
+                <li><i></i>346495936348</li> 
+                <li><i></i>blabla@gmail.com</li> 
+            </ul>
+        </nav>
+        <details>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem aspernatur omnis inventore? Recusandae assumenda est numquam ipsam sint libero delectus.</p>
+        </details>
+    </aside>
+    <footer>
+        <p>copyRight &copy;ZiadElbrolosy</p>
+    </footer>
+</body>
+</html>
